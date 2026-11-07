@@ -26,7 +26,7 @@ jobs:
           distribution: temurin
 
       - name: Setup Ghidra
-        uses: illusionyy/setup-ghidra@main
+        uses: er28-0652/setup-ghidra@master
         with:
           version: ${{ matrix.ghidra }}
 
