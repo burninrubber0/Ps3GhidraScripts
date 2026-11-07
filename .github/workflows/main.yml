@@ -26,9 +26,10 @@ jobs:
           distribution: temurin
 
       - name: Setup Ghidra
-        uses: er28-0652/setup-ghidra@master
+        uses: illusionyy/setup-ghidra@main
         with:
           version: ${{ matrix.ghidra }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: bodge
         run: chmod +x gradlew
